@@ -55,8 +55,6 @@ int main() {
             scanf("%d", &b[i][j]);
         }
     }
-
-    // Call functions
     addMatrix(a, b, r, c);
     multiplyMatrix(a, b, r, c, c);
     transposeMatrix(a, r, c);
