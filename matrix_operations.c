@@ -1,8 +1,6 @@
 #include <stdio.h>
 
 #define MAX 10
-
-// Function for addition
 void addMatrix(int a[MAX][MAX], int b[MAX][MAX], int r, int c) {
     int sum[MAX][MAX];
     printf("\nMatrix Addition:\n");
@@ -14,8 +12,6 @@ void addMatrix(int a[MAX][MAX], int b[MAX][MAX], int r, int c) {
         printf("\n");
     }
 }
-
-// Function for multiplication
 void multiplyMatrix(int a[MAX][MAX], int b[MAX][MAX], int r1, int c1, int c2) {
     int mul[MAX][MAX];
     printf("\nMatrix Multiplication:\n");
@@ -31,8 +27,6 @@ void multiplyMatrix(int a[MAX][MAX], int b[MAX][MAX], int r1, int c1, int c2) {
         printf("\n");
     }
 }
-
-// Function for transpose
 void transposeMatrix(int a[MAX][MAX], int r, int c) {
     printf("\nTranspose of Matrix:\n");
     for(int i = 0; i < c; i++) {
@@ -49,16 +43,12 @@ int main() {
 
     printf("Enter rows and columns: ");
     scanf("%d %d", &r, &c);
-
-    // Input first matrix
     printf("Enter first matrix:\n");
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
             scanf("%d", &a[i][j]);
         }
     }
-
-    // Input second matrix
     printf("Enter second matrix:\n");
     for(int i = 0; i < r; i++) {
         for(int j = 0; j < c; j++) {
